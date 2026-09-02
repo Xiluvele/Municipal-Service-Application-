@@ -44,6 +44,7 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.txtOtherCategory = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -166,39 +167,51 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.BackColor = System.Drawing.Color.Orange;
             this.btnSubmit.Location = new System.Drawing.Point(63, 706);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(188, 50);
             this.btnSubmit.TabIndex = 13;
             this.btnSubmit.Text = "Submit Report";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(275, 706);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(125, 50);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear\n";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnBack.Location = new System.Drawing.Point(425, 706);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(200, 50);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back to Main Menu";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // txtOtherCategory
+            // 
+            this.txtOtherCategory.Location = new System.Drawing.Point(477, 256);
+            this.txtOtherCategory.Name = "txtOtherCategory";
+            this.txtOtherCategory.Size = new System.Drawing.Size(100, 22);
+            this.txtOtherCategory.TabIndex = 17;
+            this.txtOtherCategory.Visible = false;
             // 
             // ReportIssueForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 777);
+            this.Controls.Add(this.txtOtherCategory);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSubmit);
@@ -243,5 +256,6 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.TextBox txtOtherCategory;
     }
 }
