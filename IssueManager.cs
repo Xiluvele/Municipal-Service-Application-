@@ -11,8 +11,7 @@ namespace MunicipalServicesApp
         public static List<Issue> Issues { get; private set; }  = new List<Issue>();
 
         // File used to preserve issues after the application closes
-        private static readonly string issuesFilePath = Path.Combine( AppDomain.CurrentDomain.BaseDirectory,  "issues.txt");
-
+        private static readonly string issuesFilePath = DataPathHelper.GetDataFilePath("issues.txt");
         // Runs automatically when IssueManager is first used
         static IssueManager()
         {

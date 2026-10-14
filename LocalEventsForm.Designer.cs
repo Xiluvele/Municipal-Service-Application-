@@ -68,7 +68,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1248, 85);
+            this.pnlHeader.Size = new System.Drawing.Size(1236, 85);
             this.pnlHeader.TabIndex = 0;
             // 
             // btnBack
@@ -91,7 +91,7 @@
             this.lblSubtitle.ForeColor = System.Drawing.Color.White;
             this.lblSubtitle.Location = new System.Drawing.Point(37, 51);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(406, 17);
+            this.lblSubtitle.Size = new System.Drawing.Size(356, 13);
             this.lblSubtitle.TabIndex = 1;
             this.lblSubtitle.Text = "Discover upcoming events and stay informed about your community";
             // 
@@ -102,7 +102,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(35, 16);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(456, 38);
+            this.lblTitle.Size = new System.Drawing.Size(358, 30);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Local Events and Announcements";
             // 
@@ -152,7 +152,7 @@
             this.dtpEventDate.Location = new System.Drawing.Point(601, 60);
             this.dtpEventDate.Name = "dtpEventDate";
             this.dtpEventDate.ShowCheckBox = true;
-            this.dtpEventDate.Size = new System.Drawing.Size(120, 25);
+            this.dtpEventDate.Size = new System.Drawing.Size(120, 21);
             this.dtpEventDate.TabIndex = 3;
             // 
             // cmbCategory
@@ -161,14 +161,14 @@
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(357, 60);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(220, 25);
+            this.cmbCategory.Size = new System.Drawing.Size(220, 20);
             this.cmbCategory.TabIndex = 2;
             // 
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(38, 60);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(300, 25);
+            this.txtSearch.Size = new System.Drawing.Size(300, 21);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -179,7 +179,7 @@
             this.lblSearchTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(78)))), ((int)(((byte)(121)))));
             this.lblSearchTitle.Location = new System.Drawing.Point(20, 12);
             this.lblSearchTitle.Name = "lblSearchTitle";
-            this.lblSearchTitle.Size = new System.Drawing.Size(120, 28);
+            this.lblSearchTitle.Size = new System.Drawing.Size(97, 21);
             this.lblSearchTitle.TabIndex = 0;
             this.lblSearchTitle.Text = "Find Events";
             // 
@@ -201,7 +201,7 @@
             this.lblAnnouncementPriority.ForeColor = System.Drawing.Color.DimGray;
             this.lblAnnouncementPriority.Location = new System.Drawing.Point(20, 80);
             this.lblAnnouncementPriority.Name = "lblAnnouncementPriority";
-            this.lblAnnouncementPriority.Size = new System.Drawing.Size(0, 17);
+            this.lblAnnouncementPriority.Size = new System.Drawing.Size(0, 13);
             this.lblAnnouncementPriority.TabIndex = 2;
             // 
             // lblAnnouncement
@@ -210,7 +210,7 @@
             this.lblAnnouncement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.lblAnnouncement.Location = new System.Drawing.Point(20, 52);
             this.lblAnnouncement.Name = "lblAnnouncement";
-            this.lblAnnouncement.Size = new System.Drawing.Size(274, 17);
+            this.lblAnnouncement.Size = new System.Drawing.Size(243, 13);
             this.lblAnnouncement.TabIndex = 1;
             this.lblAnnouncement.Text = "No important announcements at the moment.";
             // 
@@ -221,7 +221,7 @@
             this.lblAnnouncementsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(78)))), ((int)(((byte)(121)))));
             this.lblAnnouncementsTitle.Location = new System.Drawing.Point(20, 15);
             this.lblAnnouncementsTitle.Name = "lblAnnouncementsTitle";
-            this.lblAnnouncementsTitle.Size = new System.Drawing.Size(174, 17);
+            this.lblAnnouncementsTitle.Size = new System.Drawing.Size(148, 13);
             this.lblAnnouncementsTitle.TabIndex = 0;
             this.lblAnnouncementsTitle.Text = "Important Announcements";
             // 
@@ -251,7 +251,7 @@
             this.lblRecommendedInfo.ForeColor = System.Drawing.Color.DimGray;
             this.lblRecommendedInfo.Location = new System.Drawing.Point(20, 45);
             this.lblRecommendedInfo.Name = "lblRecommendedInfo";
-            this.lblRecommendedInfo.Size = new System.Drawing.Size(361, 17);
+            this.lblRecommendedInfo.Size = new System.Drawing.Size(314, 13);
             this.lblRecommendedInfo.TabIndex = 1;
             this.lblRecommendedInfo.Text = "Search for events to receive personalised recommendations.";
             // 
@@ -262,7 +262,7 @@
             this.lblRecommendedTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(78)))), ((int)(((byte)(121)))));
             this.lblRecommendedTitle.Location = new System.Drawing.Point(20, 15);
             this.lblRecommendedTitle.Name = "lblRecommendedTitle";
-            this.lblRecommendedTitle.Size = new System.Drawing.Size(211, 25);
+            this.lblRecommendedTitle.Size = new System.Drawing.Size(173, 20);
             this.lblRecommendedTitle.TabIndex = 0;
             this.lblRecommendedTitle.Text = "Recommended for you ";
             // 
@@ -292,7 +292,7 @@
             this.lblUpcomingInfo.ForeColor = System.Drawing.Color.DimGray;
             this.lblUpcomingInfo.Location = new System.Drawing.Point(22, 32);
             this.lblUpcomingInfo.Name = "lblUpcomingInfo";
-            this.lblUpcomingInfo.Size = new System.Drawing.Size(264, 17);
+            this.lblUpcomingInfo.Size = new System.Drawing.Size(234, 13);
             this.lblUpcomingInfo.TabIndex = 1;
             this.lblUpcomingInfo.Text = "Browse upcoming events in your community";
             // 
@@ -302,7 +302,7 @@
             this.lblUpcomingEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(78)))), ((int)(((byte)(121)))));
             this.lblUpcomingEvents.Location = new System.Drawing.Point(20, 15);
             this.lblUpcomingEvents.Name = "lblUpcomingEvents";
-            this.lblUpcomingEvents.Size = new System.Drawing.Size(109, 17);
+            this.lblUpcomingEvents.Size = new System.Drawing.Size(96, 13);
             this.lblUpcomingEvents.TabIndex = 0;
             this.lblUpcomingEvents.Text = "Upcoming Events";
             // 
@@ -313,18 +313,18 @@
             this.lblRecentSearches.ForeColor = System.Drawing.Color.DimGray;
             this.lblRecentSearches.Location = new System.Drawing.Point(526, 891);
             this.lblRecentSearches.Name = "lblRecentSearches";
-            this.lblRecentSearches.Size = new System.Drawing.Size(185, 23);
+            this.lblRecentSearches.Size = new System.Drawing.Size(147, 19);
             this.lblRecentSearches.TabIndex = 5;
             this.lblRecentSearches.Text = "Recent Searches: None";
             this.lblRecentSearches.Click += new System.EventHandler(this.label1_Click);
             // 
             // LocalEventsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1248, 977);
+            this.ClientSize = new System.Drawing.Size(1248, 749);
             this.Controls.Add(this.lblRecentSearches);
             this.Controls.Add(this.pnlUpcomingEvents);
             this.Controls.Add(this.pnlRecommendations);

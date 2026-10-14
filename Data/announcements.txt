@@ -1,0 +1,5 @@
+2|Emergency Water Supply Interruption|Residents are advised of an emergency water supply interruption affecting selected areas.|1|2026-10-14T00:00:00.0000000+02:00
+3|Planned Electricity Maintenance|Scheduled electricity maintenance will take place in selected areas this week.|2|2026-10-15T00:00:00.0000000+02:00
+1|Municipal Office Operating Hours|Municipal offices will operate from 08:00 to 16:30 on weekdays.|3|2026-10-14T00:00:00.0000000+02:00
+4|Community Meeting Notice|Residents are invited to attend the upcoming municipal community meeting.|3|2026-10-16T00:00:00.0000000+02:00
+5|test|testing if it workes.|3|2026-11-13T00:00:00.0000000

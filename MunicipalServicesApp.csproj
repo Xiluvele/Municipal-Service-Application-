@@ -52,8 +52,27 @@
     <Compile Include="AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminIssuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIssuesForm.Designer.cs">
+      <DependentUpon>AdminIssuesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Announcement.cs" />
+    <Compile Include="AnnouncementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnnouncementForm.Designer.cs">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnnouncementPriorityQueue.cs" />
+    <Compile Include="DataPathHelper.cs" />
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventManager.cs" />
     <Compile Include="Issue.cs" />
     <Compile Include="IssueManager.cs" />
@@ -76,6 +95,18 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAnnouncementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAnnouncementsForm.Designer.cs">
+      <DependentUpon>ManageAnnouncementsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEventsForm.Designer.cs">
+      <DependentUpon>ManageEventsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyIssuesForm.cs">
       <SubType>Form</SubType>
@@ -102,6 +133,15 @@
     <EmbeddedResource Include="AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminIssuesForm.resx">
+      <DependentUpon>AdminIssuesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnouncementForm.resx">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LocalEventsForm.resx">
       <DependentUpon>LocalEventsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAnnouncementsForm.resx">
+      <DependentUpon>ManageAnnouncementsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEventsForm.resx">
+      <DependentUpon>ManageEventsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyIssuesForm.resx">
       <DependentUpon>MyIssuesForm.cs</DependentUpon>
@@ -144,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

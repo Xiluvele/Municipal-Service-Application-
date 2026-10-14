@@ -1,0 +1,5 @@
+1|Community Clean-Up Campaign|Join residents in keeping our community clean and safe.|Environment|2026-10-17T00:00:00.0000000+02:00|Pretoria Central
+2|Youth Career Workshop|A career development workshop for young people.|Education|2026-10-20T00:00:00.0000000+02:00|Municipal Community Hall
+3|Heritage Celebration|Celebrate local culture, heritage and community.|Culture|2026-10-24T00:00:00.0000000+02:00|Pretoria City Hall
+4|Community Sports Day|A community sports programme for residents and families.|Sports|2026-10-28T00:00:00.0000000+02:00|Municipal Sports Ground
+5|tested|testing|Culture|2026-10-30T00:00:00.0000000|106 madiba street

@@ -1,0 +1,3 @@
+Municipal Administrator|admin@municipality.gov.za|Admin@123|Admin
+Ethan Nyathela|ethan@gmail.com|Pass@123|Citizen
+Xiluvelo Mashele|Xiluvelo@gmail.com|Pass@123|Citizen

@@ -11,8 +11,8 @@ namespace MunicipalServicesApp
         // Value = User object
         private static readonly Dictionary<string, User> users = new Dictionary<string, User>(StringComparer.OrdinalIgnoreCase);
 
-        // File used to keep registered users after the application closes
-        private static readonly string usersFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "users.txt");
+        // Save users inside the project's Data folder
+        private static readonly string usersFilePath = DataPathHelper.GetDataFilePath("users.txt");
 
         // Static constructor runs automatically when UserManager
         // is first used.
@@ -23,7 +23,7 @@ namespace MunicipalServicesApp
             // Make sure the default administrator always exists.
             if (!users.ContainsKey("admin@municipality.gov.za"))
             {
-                User admin = new User( "Municipal Administrator", "admin@municipality.gov.za", "Admin@123", "Admin");
+                User admin = new User( "Municipal Administrator",  "admin@municipality.gov.za", "Admin@123", "Admin");
 
                 users.Add(admin.Email, admin);
 
@@ -32,22 +32,22 @@ namespace MunicipalServicesApp
         }
 
         // Registers a new citizen account
-        public static bool RegisterUser( string fullName, string email, string password)
+        public static bool RegisterUser(string fullName, string email,string password)
         {
             email = email.Trim();
 
-            // Dictionary makes checking for duplicate emails simple.
+            // Dictionary makes checking duplicate emails simple.
             if (users.ContainsKey(email))
             {
                 return false;
             }
 
             // Citizens cannot register themselves as administrators.
-            User newUser = new User( fullName.Trim(),  email, password, "Citizen");
+            User newUser = new User( fullName.Trim(),email,password, "Citizen");
 
             users.Add(email, newUser);
 
-            // Save the updated Dictionary to the file.
+            // Save the updated Dictionary to users.txt.
             SaveUsers();
 
             return true;
@@ -77,7 +77,9 @@ namespace MunicipalServicesApp
             {
                 foreach (User user in users.Values)
                 {
-                    writer.WriteLine($"{user.FullName}|{user.Email}|{user.Password}|{user.Role}");
+                    writer.WriteLine(
+                        $"{user.FullName}|{user.Email}|{user.Password}|{user.Role}"
+                    );
                 }
             }
         }
@@ -113,7 +115,7 @@ namespace MunicipalServicesApp
 
                 if (!users.ContainsKey(email))
                 {
-                    User user = new User(fullName,email, password, role);
+                    User user = new User(fullName, email,password, role );
 
                     users.Add(email, user);
                 }
