@@ -15,7 +15,7 @@ namespace MunicipalServicesApp
     public partial class ReportIssueForm : Form
     {
         // Static list to store all issues across the application
-        public static List<Issue> issuesList = new List<Issue>();
+        //public static List<Issue> issuesList = new List<Issue>();
         private string selectedFilePath = "";
         public ReportIssueForm()
         {
@@ -251,8 +251,8 @@ namespace MunicipalServicesApp
                 selectedFilePath
             );
 
-            // 4. Add to the static list
-            issuesList.Add(newIssue);
+            // Add the issue to our List and save it permanently
+            IssueManager.AddIssue(newIssue);
 
             // 5. User Engagement Feature: Submission Processing
             btnSubmit.Enabled = false;
